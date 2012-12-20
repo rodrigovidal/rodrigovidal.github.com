@@ -17,8 +17,15 @@ dynamic components such as templates, partials, liquid code, markdown, etc. Jeky
 
 ### Examples
 
-This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
+{% highlight python %}
+clientes = (
+    ("Alô", 0.0, 1.0), 
+    ("C1",  0.0, 0.0), 
+    ("C2",  1.0, 0.0)
+)
+{% endhighlight %}
 
+This website is created with Jekyll. [Other Jekyll websites](https://github.com/mojombo/jekyll/wiki/Sites).
 
 
 ### What does Jekyll Do?
