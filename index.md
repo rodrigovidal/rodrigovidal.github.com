@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Rodrigo Vidal!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}

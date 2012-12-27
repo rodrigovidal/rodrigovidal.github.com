@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap</title>
+ <title>Rodrigo Vidal</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-12-19T23:49:43-02:00</updated>
+ <updated>2012-12-21T00:37:26-02:00</updated>
  <id>http://username.github.com</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Rodrigo Vidal</name>
+   <email>rodrigovidal777@gmail.com</email>
  </author>
 
  
@@ -26,13 +26,7 @@
 &lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;#8220;a simple, blog aware, static site generator&amp;#8221;.&lt;/p&gt;
 
 &lt;h3 id='examples'&gt;Examples&lt;/h3&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='n'&gt;clientes&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;
-    &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;AlÃ´&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mf'&gt;0.0&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mf'&gt;1.0&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt; 
-    &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;C1&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;  &lt;span class='mf'&gt;0.0&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mf'&gt;0.0&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt; 
-    &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;C2&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;  &lt;span class='mf'&gt;1.0&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='mf'&gt;0.0&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;span class='p'&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+
 &lt;p&gt;This website is created with Jekyll. &lt;a href='https://github.com/mojombo/jekyll/wiki/Sites'&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id='what_does_jekyll_do'&gt;What does Jekyll Do?&lt;/h3&gt;
