@@ -8,10 +8,8 @@ tagline: F#, Haskell, Clojure e.. engenharia, matemática e física..
 
 {% assign p = site.posts.first %}
 <div id="post">
-  <h2 class="post_title"><a href="{{ p.url }}">{{ p.title}}</a></h2>
+  <h2 class="post_title"><a href="{{ p.url }}"> {{ p.date | date: "%d/%m/%Y" }} - {{ p.title}}</a></h2>
   <hr/>
-  <p class="post-date"><span class="date">{{ p.date | date: "%d/%m/%Y" }}</span></p>
-  <p class="post-date"></p>
   {{ p.content }}
   <h3><a href="{{ p.url }}#comments">Comentários</a></h3>
 </div>
