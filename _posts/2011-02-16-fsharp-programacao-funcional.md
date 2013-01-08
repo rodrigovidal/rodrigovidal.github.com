@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "F# - A Programação Funcional"
-tags : [Eventos]
+tags : [Programação Funcional, F#]
 ---
 {% include JB/setup %}
 

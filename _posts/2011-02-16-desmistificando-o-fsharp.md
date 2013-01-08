@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Desmistificando o F#"
-tags : [Programação Funcional, F#]
+tags : [F#]
 ---
 {% include JB/setup %}
 

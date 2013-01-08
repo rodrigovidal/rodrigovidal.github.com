@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Programação Funcional - Recursão"
-tags : [F#]
+tags : [Programação Funcional]
 ---
 {% include JB/setup %}
 
@@ -12,7 +12,7 @@ Hoje vamos dar início a uma discussão sobre Recursão, dentro do contexto de l
 
 Você sabe o que é recursão? Não? A definição mais simples e respondida por desenvolvedores é a seguinte:
 
-“Para entender recursão, você tem que entender recursão” – Anônimo
+"Para entender recursão, você tem que entender recursão" – Anônimo
 
 Em geral os desenvolvedores estão acostumados com as estruturas While, For, Do.. While, mas quando têm que pensar em uma solução recursiva, o raciocínio dá um nó e a solução simplesmente não sai. O problema disso é que você como desenvolvedor, acaba ficando condicionado a solucionar problemas sempre da mesma maneira. Isso não é bom certo? Existem soluções recursivas extremamente elegantes, e que podem facilitar e muito a manutenção do código e melhor expressar sua intenção. Mas para que isso possa acontecer, você deve estar familiarizado com seu funcionamento, para que rapidamente consiga entender o fluxo do algoritmo.
 
@@ -20,9 +20,9 @@ A estratégia de recursivamente definir uma função está em quebrar um problem
 
 Bom vamos a alguns exemplos de funções recursivas simples para que possamos aos poucos entender seu funcionamento. É extremamente indicado que você gaste algum tempo nas implementações, e tente acompanhar o fluxo de execução, só assim o conceito se fixará. Se possível tente implementar em alguma outra linguagem. 
 
-###O exemplo clássico: Fatorial e a Keyword “rec”
+###O exemplo clássico: Fatorial e a Keyword "rec"
 
-Uma função que chama ela própria é conhecida como uma função recursiva. Em F# uma função recursiva possui a keyword “rec” em sua definição. Ou seja, diferente do C# por exemplo caso, você explicitamente não informe que a função é recursiva, e tente chama-la em sua definição você receberá um erro de compilação. A razão para isso é tornar o código mais legível, e criar uma espécie de contrato para funções que desejem ser recursivas. No entanto, há algo que eu gostaria que ocorresse. Se eu defino explicitamente uma função como recursiva, caso em sua definição eu não faça a chamada para ela própria, em minha opinião também deveria ocorrer um erro de compilação. Já sinalizei isso para o Time de F#.
+Uma função que chama ela própria é conhecida como uma função recursiva. Em F# uma função recursiva possui a keyword "rec" em sua definição. Ou seja, diferente do C# por exemplo caso, você explicitamente não informe que a função é recursiva, e tente chama-la em sua definição você receberá um erro de compilação. A razão para isso é tornar o código mais legível, e criar uma espécie de contrato para funções que desejem ser recursivas. No entanto, há algo que eu gostaria que ocorresse. Se eu defino explicitamente uma função como recursiva, caso em sua definição eu não faça a chamada para ela própria, em minha opinião também deveria ocorrer um erro de compilação. Já sinalizei isso para o Time de F#.
 
 {% highlight fsharp %}
 let rec factorial = function
@@ -38,7 +38,7 @@ Bom a função fatorial não é muito desafiadora, e nem apresenta um função m
 
 A função que chamamos aqui de maximum, está implementada por padrão em diversas linguagens como por exemplo no LINQ do C# como o método Max().
 
-A função Maximum recebe uma lista de coisas genéricas, que podem ser colocadas em ordem, por isso implementar “comparison” que permite que dois objetos sejam comparados e retorne o maior deles. Isso pode ser expresso elegantemente usando recursão. Quer tentar?
+A função Maximum recebe uma lista de coisas genéricas, que podem ser colocadas em ordem, por isso implementar "comparison" que permite que dois objetos sejam comparados e retorne o maior deles. Isso pode ser expresso elegantemente usando recursão. Quer tentar?
 
 Agora vamos ver como definimos essa função recursivamente. Primeiro, nós precisamos definir um caso base. Bom neste caso podemos dizer que o máximo de uma lista que só apresenta um elemento, é este elemento. Mas e se a lista tiver mais de um elemento? Então teremos que comparar qual é o maior, o primeiro elemento (head) da lista ou o máximo de todo o resto (tail) da lista.
 
@@ -62,7 +62,7 @@ Agora vamos subir o nível, comparando 7 e 4 através da função max. Uma vez q
 
 ###A Função Replicate :  int -> 'a -> 'a list
 
-Vamos continuar exercitando os músculos recursivos do cérebro com uma nova função chamada aqui de Replicate. O objetivo da função replicate é dando um inteiro e um valor qualquer criar uma lista com esta quantidade de valor repetidos. Por exemplo, chamando replicate 3 “fsharp!” deve retornar [ “fsharp!” ; “fsharp!” ; “fsharp!” ]. Claro?!
+Vamos continuar exercitando os músculos recursivos do cérebro com uma nova função chamada aqui de Replicate. O objetivo da função replicate é dando um inteiro e um valor qualquer criar uma lista com esta quantidade de valor repetidos. Por exemplo, chamando replicate 3 "fsharp!" deve retornar [ "fsharp!" ; "fsharp!" ; "fsharp!" ]. Claro?!
 
 Vamos pensar sobre as regras. A princípio podemos pensar em duas regras:
 
@@ -90,7 +90,7 @@ let rec take n list =
     | (n, h::t) -> h :: take (n-1) t
 {% endhighlight %}
 
-Este algoritmo é um pouco peculiar, primeiro nós fazemos uma construção e “n” e “list” em uma tupla para que passamos aplicar o pattern matching em ambos os elementos, e realizar desconstruções logo em seguida.
+Este algoritmo é um pouco peculiar, primeiro nós fazemos uma construção e "n" e "list" em uma tupla para que passamos aplicar o pattern matching em ambos os elementos, e realizar desconstruções logo em seguida.
 
 ###A Função Reverse : 'a list -> 'a list
 
@@ -115,7 +115,7 @@ let rec repeat x =
      }
 {% endhighlight %}
 
-Bom aqui temos uma construção diferente. A primeira coisa a se notar é que não usamos uma lista, e sim o que em F# é definido uma sequencia, que nada mais é que um sinônimo para IEnumerable genérico, e que permite que nossa lista seja infinita. A keyword yield funciona exatamente como o yield return do C#, e a keyword yield! (lê-se: yield bang) permite chamadas recursivas. A keyword “seq” é na verdade uma computation expression, mas isso é tema para um outro post, e é utilizada para construção de sequencias em F#.
+Bom aqui temos uma construção diferente. A primeira coisa a se notar é que não usamos uma lista, e sim o que em F# é definido uma sequencia, que nada mais é que um sinônimo para IEnumerable genérico, e que permite que nossa lista seja infinita. A keyword yield funciona exatamente como o yield return do C#, e a keyword yield! (lê-se: yield bang) permite chamadas recursivas. A keyword "seq" é na verdade uma computation expression, mas isso é tema para um outro post, e é utilizada para construção de sequencias em F#.
 
 ###A Função Zip : 'a list -> 'b list -> ('a * 'b) list
 
@@ -148,16 +148,16 @@ Já deu pra perceber que funções recursivas facilitam e expressam bem, uma sé
 Duas funções que chamam uma a outra são conhecidas como mutuamente recursivas e apresentam um desafio único para o sistema de inferência de tipo do F#. Para determinar o tipo da primeira função, você precisa conhecer o tipo da segunda, e vice-versa.
 
 {% highlight fsharp %}
-(*
+
 let idOdd x = if x = 1 then true else not (isEven(x-1))
 let isEven x = if x = 0 then true else not (isOdd(x-1))
-*)
+
  
 let rec isOdd n = (n=1) || isEven (n-1)
 and     isEven n = (n = 0) || isOdd (n-1)
 {% endhighlight %}
 
-O exemplo acima mostra o caso de funções mutuamente recursivas, onde a função que determina se um numero é par é definido em função da função que define que uma função é impar e vice versão. O código comentado entre (**) não funciona pois o compilador irá avisa que uma das funções ainda não está definida.
+O exemplo acima mostra o caso de funções mutuamente recursivas, onde a função que determina se um numero é par é definido em função da função que define que uma função é impar e vice versão. O código comentado entre não funciona pois o compilador irá avisa que uma das funções ainda não está definida.
 
 Acho que eu ainda não falei sobre isso aqui no blog, mas em F# a ordem do código importa, ou seja, uma função definida abaixo da que está invocando-a irá causa um erro de compilação. Essa na verdade é uma feature da linguagem, que foi desenhada para funcionar dessa forma. A longo prazo facilita bastante a leitura e manutenção de softwares escritos.
 
@@ -176,7 +176,7 @@ let rec quicksort = function
 
 O código de referência em Haskell
 
-{% highlight fsharp %}
+{% highlight haskell %}
 quicksort :: (Ord a) => [a] -> [a]
 quicksort [] = []
 quicksort (x:xs) =

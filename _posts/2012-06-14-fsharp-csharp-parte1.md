@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "F# Para Programadores C# - Parte 1"
-tags : [Eventos]
+tags : [F#, C#]
 ---
 {% include JB/setup %}
 

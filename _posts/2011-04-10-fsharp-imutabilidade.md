@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "F# - Imutabilidade"
-tags : [F#, C#]
+tags : [F#, C#, Programação Funcional]
 ---
 {% include JB/setup %}
 

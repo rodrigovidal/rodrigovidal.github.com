@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Programação Funcional - Currying e Aplicação Parcial de Funções"
-tags : [F#]
+tags : [Programação Funcional]
 ---
 {% include JB/setup %}
 

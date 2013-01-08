@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Programação Funcional - Pattern Matching"
-tags : [F#]
+tags : [Programação Funcional]
 ---
 {% include JB/setup %}
 

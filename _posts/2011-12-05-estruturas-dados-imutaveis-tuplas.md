@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Estruturas de Dados Imutáveis - Tuplas"
-tags : [Eventos]
+tags : [Programação Funcional]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 category : lessons
 title: "Programação Funcional - Expressions ao invés de Statements"
-tags : [F#]
+tags : [F#, Programação Funcional]
 ---
 {% include JB/setup %}
 
