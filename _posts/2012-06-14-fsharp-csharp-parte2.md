@@ -85,5 +85,4 @@ Bem parecido, no entanto podemos perceber que o F# trata funções como membros 
 Por hoje era isso!
 
 Abraço,
-
 Rodrigo Vidal
