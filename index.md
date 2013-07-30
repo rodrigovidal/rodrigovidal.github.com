@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Programação Funcional
-tagline: F#, Haskell, Clojure e.. engenharia, matemática e física..
+title: The Theoretical Programmer
+tagline: ...
 ---
 {% include JB/setup %}
 
